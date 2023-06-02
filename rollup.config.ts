@@ -6,7 +6,7 @@ import buildStats from 'rollup-plugin-build-statistics';
 export default defineConfig({
     input: 'src/index.ts',
     output: {
-        dir: 'build',
+        dir: 'dist',
         format: 'iife',
     },
     plugins: [
