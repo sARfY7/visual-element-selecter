@@ -11,7 +11,13 @@ export default defineConfig({
     },
     plugins: [
         typescript(),
-        terser(),
+        terser({
+            compress: {
+                global_defs: {
+                    module: false,
+                },
+            },
+        }),
         buildStats({ projectName: 'visual-element-selecter' }),
     ],
 });
