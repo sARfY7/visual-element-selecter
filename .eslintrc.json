@@ -4,7 +4,7 @@
         "es2021": true
     },
     "extends": ["standard-with-typescript", "plugin:prettier/recommended"],
-    "plugins": ["prettier"],
+    "plugins": ["simple-import-sort", "prettier"],
     "overrides": [],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -15,6 +15,12 @@
         "prettier/prettier": "error",
         "arrow-body-style": "off",
         "prefer-arrow-callback": "off",
-        "comma-dangle": "off"
+        "comma-dangle": "off",
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "import/first": "error",
+        "import/newline-after-import": "error",
+        "import/no-duplicates": "error",
+        "@typescript-eslint/strict-boolean-expressions": "off"
     }
 }
